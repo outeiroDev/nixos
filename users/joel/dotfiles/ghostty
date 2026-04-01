@@ -1,0 +1,40 @@
+theme = One Double Dark
+term = xterm-256color
+title = Ghostty
+
+keybind = ctrl+z=close_surface
+keybind = ctrl+shift+comma=reload_config
+
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+v=paste_from_clipboard
+
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+
+keybind = ctrl+d>right=new_split:right
+keybind = ctrl+d>left=new_split:left
+keybind = ctrl+g>right=goto_split:right
+keybind = ctrl+g>left>left=goto_split:left
+keybind = ctrl+g>up=toggle_split_zoom
+
+font-family = 'CaskaydiaCove Nerd Font Mono'
+
+window-decoration = false
+window-theme = ghostty
+window-vsync = true
+window-padding-x = 10
+window-padding-y = 10
+window-padding-color = extend-always
+window-width = 120
+window-height = 34
+
+fullscreen = false
+
+quick-terminal-position = top
+quick-terminal-autohide = false
+
+desktop-notifications = true
+clipboard-trim-trailing-spaces = true
+focus-follows-mouse = true
+confirm-close-surface = false
+shell-integration = zsh
+#shell-integration-features = cursor, sudo, title, ssh-env

@@ -1,0 +1,11 @@
+{
+  "dockerManager": {
+    "enabled": true
+  },
+  "screenRecorder": {
+    "enabled": true
+  },
+  "grimblast": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,8 @@
+# Ignore build result symlink
+result
+
+# Never commit unencrypted secrets
+# .age files ARE safe to commit (they're encrypted)
+*.key
+*.pem
+!*.age
