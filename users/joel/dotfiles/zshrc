@@ -58,12 +58,6 @@ else
    export EDITOR='code'
 fi
 
-## ALIASES (personal, beyond NixOS-managed ones in users/joel/shell.nix)
-alias cat='bat'
-alias ccat='/usr/bin/cat'
-alias nrs='sudo nixos-rebuild switch --flake /etc/nixos'
-alias lk='cd $(walk --icons --preview)'
-
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 zstyle :omz:plugins:ssh-agent identities joel joel_ssb
