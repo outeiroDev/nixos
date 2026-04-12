@@ -11,13 +11,6 @@
   ];
 
   home.stateVersion = "25.11";
-
-  # Set Bibata as default cursor theme
-  home.sessionVariables = {
-    XCURSOR_THEME = "Bibata-Modern-Classic";
-    XCURSOR_SIZE = "32";
-  };
-
   home.enableNixpkgsReleaseCheck = false;
   home.username = "joel";
   home.homeDirectory = "/home/joel";

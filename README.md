@@ -28,7 +28,7 @@ Everything has a shell alias (defined in `users/joel/shell.nix`):
 | `eflake` | Edit flake |
 | `ehome` | Edit home-manager |
 | `esrc` | Edit zshrc |
-| `esecret` | Edit a secret (e.g. `esecret secrets/users/joel/password.age`). Uses $NIXOS_CONFIG for location-independence. |
+| `esecret` | Edit a secret (e.g. `esecret secrets/users/joel/password.age`) |
 | `rekey` | Re-encrypt all secrets after adding a new host key |
 | `dotfiles` | `cd` to dotfiles dir |
 | `secrets` | `cd` to secrets dir |

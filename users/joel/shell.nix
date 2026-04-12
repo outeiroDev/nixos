@@ -20,7 +20,7 @@
 
       # Secrets
       secrets = "cd /etc/nixos/secrets";
-      esecret = "cd $NIXOS_CONFIG && agenix -e";
+      esecret = "cd /etc/nixos && agenix -e";
       rekey = "cd /etc/nixos && agenix -r";
 
       # Dotfiles

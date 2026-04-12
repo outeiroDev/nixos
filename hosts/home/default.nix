@@ -11,12 +11,6 @@
   ];
 
   system.stateVersion = "25.11";
-  programs.nano.nanorc = ''
-    set linenumbers
-    set softwrap
-    set tabstospaces
-    set tabsize 2
-  '';
 
   # Host-specific PAM / U2F
   security.pam = {
