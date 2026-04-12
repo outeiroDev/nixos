@@ -458,12 +458,17 @@
       "position": 0,
       "screenPreferences": [
         {
+          "name": "DP-3",
+          "model": "LS32CG51x",
+          "modelIndex": 1
+        },
+        {
           "name": "DP-6",
           "model": "LS32CG51x",
           "modelIndex": 0
         }
       ],
-      "showOnLastDisplay": true,
+      "showOnLastDisplay": false,
       "leftWidgets": [
         {
           "id": "workspaceSwitcher",
@@ -559,9 +564,14 @@
           "name": "DP-5",
           "model": "LS32CG51x",
           "modelIndex": 1
+        },
+        {
+          "name": "DP-2",
+          "model": "LS32CG51x",
+          "modelIndex": 0
         }
       ],
-      "showOnLastDisplay": true,
+      "showOnLastDisplay": false,
       "leftWidgets": [
         "launcherButton",
         "workspaceSwitcher"
