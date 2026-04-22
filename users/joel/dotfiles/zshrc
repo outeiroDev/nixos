@@ -55,7 +55,7 @@ export LANG=es_ES.UTF-8
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nvim'
 else
-   export EDITOR='code'
+   export EDITOR='zeditor'
 fi
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

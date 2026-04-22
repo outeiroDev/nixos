@@ -9,6 +9,7 @@
     # Tools
     age
     agenix.packages.${pkgs.system}.default
+    wf-recorder
 
     # Desktop apps
     bibata-cursors
@@ -22,6 +23,7 @@
     rustdesk
     slack
     spotify
+    cacert
 
     # Editors
     gitbutler
@@ -46,5 +48,6 @@
 
     # Shell tools
     zsh-powerlevel10k
+    nix
   ];
 }

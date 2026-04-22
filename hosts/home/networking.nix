@@ -22,7 +22,7 @@
               "10.50.0.0/16"
               "10.8.0.0/24"
             ];
-            persistentKeepalive = 25;
+            persistentKeepalive = 0;
             endpoint = "188.245.80.102:51820";
           }
         ];
