@@ -19,14 +19,8 @@
       home = nixpkgs.lib.nixosSystem {
 	specialArgs = { inherit secrets; };
         modules = [
-          # Host configuration
           ./hosts/home
-
-          # User: joel (NixOS-level)
           ./users/joel/default.nix
-          ./users/joel/packages.nix
-          ./users/joel/fonts.nix
-          ./users/joel/shell.nix
 
           # Home Manager
           home-manager.nixosModules.home-manager
