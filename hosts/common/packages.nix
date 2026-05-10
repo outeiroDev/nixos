@@ -1,6 +1,16 @@
 { config, pkgs, ... }:
 
 {
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    fnm
+    gcc
+    zlib
+    openssl
+    gnumake
+    stdenv.cc.cc.lib
+  ]; 
+
   environment.systemPackages = with pkgs; [
     config.boot.kernelPackages.nvidiaPackages.stable
     egl-wayland

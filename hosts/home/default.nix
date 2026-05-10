@@ -5,9 +5,6 @@
     ../common
     ./hardware.nix
     ./networking.nix
-    ../../modules/virtualisation.nix
-    ../../modules/dms.nix
-    ../../modules/nix-ld.nix
   ];
 
   system.stateVersion = "25.11";
