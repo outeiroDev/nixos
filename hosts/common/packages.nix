@@ -43,6 +43,7 @@
     vhs
     wireguard-tools
     wishlist
+    arduino-ide
 
     # Shell tools
     zsh-powerlevel10k

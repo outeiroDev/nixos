@@ -21,19 +21,6 @@
 
   programs.fuse.userAllowOther = true;
 
-  fileSystems."${secrets}" = {
-    device = "//u472310.your-storagebox.de/backup/secrets";
-    fsType = "cifs";
-    options = [
-      "x-systemd.automount"
-      "noauto"
-      "x-systemd.idle-timeout=60"
-      "x-systemd.device-timeout=5s"
-      "x-systemd.mount-timeout=5s"
-      "credentials=${secrets}/cloud-password"
-    ];
-  };
-  
   time.timeZone = "Europe/Madrid";
   i18n = {
     defaultLocale = "es_ES.UTF-8";
@@ -49,8 +36,15 @@
       LC_TIME = "es_ES.UTF-8";
     };
   };
+  
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
 
   hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+  hardware.enableAllFirmware = true;
+
+  services.blueman.enable = true;
 
   nix.gc.automatic = true;
   nix.gc.dates = "daily";
