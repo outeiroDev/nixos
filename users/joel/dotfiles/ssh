@@ -1,0 +1,5 @@
+Host prod.old
+  HostName 10.50.0.2
+  User root
+  Port 2224
+  IdentityFile ~/.ssh/joel_ssb
