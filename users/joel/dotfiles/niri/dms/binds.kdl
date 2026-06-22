@@ -84,6 +84,8 @@ binds {
     Mod+Ctrl+WheelScrollRight { move-column-right; }
     Mod+Ctrl+WheelScrollLeft  { move-column-left; }
 
+    Mod+Shift+F  { switch-focus-between-floating-and-tiling; }
+
     Mod+WheelScrollDown      { focus-column-right; }
     Mod+WheelScrollUp        { focus-column-left; }
     Mod+Ctrl+WheelScrollDown { move-column-right; }

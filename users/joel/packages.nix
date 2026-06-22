@@ -8,5 +8,6 @@
     vscode
     zed-editor
     fnm
+    localsend
   ];
 }

@@ -38,3 +38,5 @@ focus-follows-mouse = true
 confirm-close-surface = false
 shell-integration = zsh
 #shell-integration-features = cursor, sudo, title, ssh-env
+custom-shader = ~/.config/ghosttyblackhole.glsl
+custom-shader-animation = true

@@ -16,6 +16,7 @@
   home.file.".config/ghostty/config".source = ./dotfiles/ghostty;
   xdg.configFile."niri".source = ./dotfiles/niri;
   xdg.configFile."DankMaterialShell".source = ./dotfiles/dms;
+  home.file.".ssh/config".source = ./dotfiles/ssh;
 
   # SSH public keys (not secrets — plain text is fine)
   home.file.".ssh/joel.pub".text = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINsqs3rVFAMwaGMbX+AISjIaCBvGx3jWbTj/7viZ377n joel@outeiro.com";
