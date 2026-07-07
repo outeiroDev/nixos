@@ -1,5 +1,71 @@
+Host *
+  ForwardAgent yes
+  IdentityFile ~/.ssh/joel
+
+Host git
+  HostName git.outeiro.dev
+  User joel
+  Port 23231
+
+Host 10.8.0.*
+  IdentityFile ~/.ssh/ansible_key
+
+Host outeirodev
+  HostName 65.21.187.45
+
+Host hostinger
+  HostName hostinger
+  User root
+
+Host cloud
+  HostName u472310.your-storagebox.de
+  User u472310
+  Port 23
+
+Host monitor
+  User jumper
+  IdentityFile ~/.ssh/joel_ssb
+  HostName 188.245.45.202
+
 Host prod.old
   HostName 10.50.0.2
   User root
   Port 2224
   IdentityFile ~/.ssh/joel_ssb
+
+Host dev.old
+  HostName 168.119.116.204
+  User root
+  IdentityFile ~/.ssh/id_rsa
+
+Host prod.new
+  HostName 91.98.129.153
+  User root
+  Port 222
+  IdentityFile ~/.ssh/joel_ssb
+
+Host float
+  HostName 95.216.176.146
+  User root
+  Port 222
+  IdentityFile ~/.ssh/joel_ssb
+
+Host deploy
+  HostName 65.108.241.236
+  User root
+  Port 222
+  IdentityFile ~/.ssh/joel_ssb
+
+Host plus
+  HostName 10.50.0.3
+  ProxyJump monitor
+  IdentityFile ~/.ssh/joel_ssb
+  User root
+
+Host work
+  HostName 192.168.1.3
+  User joel
+  IdentityFile ~/.ssh/joel_ssb
+
+Host joel.outeiro.casa
+  HostName joel.outeiro.casa

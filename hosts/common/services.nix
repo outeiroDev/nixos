@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   services = {
@@ -6,6 +6,10 @@
     printing.enable = true;
     pulseaudio.enable = false;
     upower.enable = true;
+    ollama = {
+      enable = true;
+      package = pkgs.ollama-cuda;
+    };
     openssh = {
       enable = true;
       settings = {
